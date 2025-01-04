@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <p id="website-logo">Website Logo</p>
+        <h1 id="title">Survey Form</h1>
+    </div>
+    <div class="form">
+        <div class="appreciation-text">
+            <p id="description">Your feedback will help us improve our website.<br>We greatly appreciate you filling out this survey.<br>Thank you! :)</p>
+        </div>
+        <form action="" method="post" id="survey-form">
+            <div class="personal-information">
+                <div class="name-username-email">
+                    <div class="name">
+                        <label for="name" id="name-label">Name <span class="required-asterisk">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name." required>
+                    </div>
+                    <div class="username">
+                        <label for="username" id="username-label">Username <span class="required-asterisk">*</span></label>
+                        <input type="text" name="username" id="username" placeholder="Enter your username. Ex. @username" required>
+                    </div>
+                    <div class="email">
+                        <label for="email" id="email-label">Email <span class="required-asterisk">*</span></label>
+                        <input type="email" name="email" id="email" placeholder="Enter a valid email." required>
+                    </div>
+                </div>
+                <div class="age-gender-country">
+                    <div class="age">
+                        <label for="number" id="number-label">Age <span class="required-asterisk">*</span></label>
+                        <input type="number" name="age" id="number" min="13" max="100" placeholder="You must be at least 13." required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender" id="gender-label">Gender</label>
+                        <select name="gender" id="dropdown">
+                            <option value="">Select your gender (optional)</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="country">
+                        <label for="country" id="country-label">Country</label>
+                        <input type="text" name="country" id="country" placeholder="Enter your country (optional)">
+                    </div>
+                </div>
+            </div>
+            <div class="visit-frequency-question">
+                <p>How often do you visit our website?</p>
+                <div class="radio-inputs-column">
+                    <div class="radio-input-row">
+                        <input type="radio" name="visit-frequency" id="daily" value="daily">
+                        <label for="daily">Daily</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="visit-frequency" id="weekly" value="weekly"> 
+                        <label for="weekly">Weekly</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="visit-frequency" id="monthly" value="monthly"> 
+                        <label for="monthly">Monthly</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="visit-frequency" id="rarely" value="rarely"> 
+                        <label for="rarely">Rarely</label>
+                    </div>
+                </div>
+            </div>
+            <div class="content-preference-question">
+                <p>What type of content do you enjoy most on our website?<br><span>Check all that apply</span></p>
+                <div class="checkbox-inputs-column">
+                    <div class="checkbox-input-row">
+                        <input type="checkbox" name="content-preference" id="movie-reviews" value="movie-reviews">
+                        <label for="movie-reviews">Movie Reviews</label>
+                    </div>
+                    <div class="checkbox-input-row">
+                        <input type="checkbox" name="content-preference" id="forums-discussions" value="forums-discussions">
+                        <label for="forums-discussions">Forums-Discussions</label>
+                    </div>
+                    <div class="checkbox-input-row">
+                        <input type="checkbox" name="content-preference" id="movie-news" value="movie-news">
+                        <label for="movie-news">Movie News</label>
+                    </div>
+                    <div class="checkbox-input-row">
+                        <input type="checkbox" name="content-preference" id="upcoming-releases" value="upcoming-releases">
+                        <label for="upcoming-releases">Upcoming Releases</label>
+                    </div>
+                    <div class="checkbox-input-row">
+                        <input type="checkbox" name="content-preference" id="movie-recommendations" value="movie-recommendations">
+                        <label for="movie-recommendations"> Movie Recommendations</label>
+                    </div>
+                </div>
+            </div>
+            <div class="website-appeal">
+                <p>Do you find our website design visually appealing?</p>
+                <div class="radio-inputs-column">
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-appeal" id="very-appealing" value="very-appealing">
+                        <label for="very-appealing">Very appealing</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-appeal" id="appealing" value="appealing">
+                        <label for="appealing">Appealing</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-appeal" id="neutral-appeal" value="neutral">
+                        <label for="neutral-appeal">Neutral</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-appeal" id="unappealing" value="unappealing">
+                        <label for="unappealing">Unappealing</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-appeal" id="very-unappealing" value="very-unappealing">
+                        <label for="very-unappealing">Very unappealing</label>
+                    </div>
+                </div>
+            </div>
+            <div class="website-recommendation">
+                <p>How likely are you to recommend our website to others?</p>
+                <div class="radio-inputs-column">
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-recommendation" id="very-likely" value="very-likely">
+                        <label for="very-likely">Very likely</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-recommendation" id="likely" value="likely">
+                        <label for="likely">Likely</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-recommendation" id="neutral-recommendation" value="neutral">
+                        <label for="neutral-recommendation">Neutral</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-recommendation" id="unlikely" value="unlikely">
+                        <label for="unlikely">Unlikely</label>
+                    </div>
+                    <div class="radio-input-row">
+                        <input type="radio" name="website-recommendation" id="very-unlikely" value="very-unlikely">
+                        <label for="very-unlikely">Very unlikely</label>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestions">
+                <p>Is there anything you would like to suggest on our website?</p>
+                <textarea name="suggestions" placeholder="Feel free to ask..."></textarea>
+            </div>
+            <div class="submit-button">
+                <button type="submit" id="submit">submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
